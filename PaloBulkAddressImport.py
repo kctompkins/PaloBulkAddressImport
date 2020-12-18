@@ -55,7 +55,7 @@ try:
             line_count += 1
     else:
         for address in addressDict:
-            setAddress = 'set device-group '+deviceGroup+' address "'+addressDict[line_count]['name']+'"'
+            setAddress = 'set device-group "'+deviceGroup+'" address "'+addressDict[line_count]['name']+'"'
             if addressDict[line_count]['description'] != "":
                 setAddress = setAddress+' description "'+addressDict[line_count]['description']+'"'
             if addressDict[line_count]['tag'] != "":
